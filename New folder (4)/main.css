@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+html{
+     scroll-behavior: smooth;
+}
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body{
+     background-color: #ffffff;
+     color: #000047;
+     font-family: 'Poppins', sans-serif;
+}
+.navigation{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px;
+     background-color: #000047;
+     position: sticky;
+     top: 0;
+     width: 100%;
+}
+.navigation a{
+     color: #ffffff;
+     text-decoration: none;
+}
+.navigation ul{
+     display: flex;
+     list-style: none;
+}
+.links{
+     padding: 20px;
+     margin: 10px;
+     text-decoration: none;
+}
+.other_nav{
+     border: 3px solid ;
+     background-color: #000047;
+     text-align: center;
+     display: none;
+     grid-template-columns: repeat(1,2fr);
+     position: sticky;
+     top: 0;
+     width: 100%;
+}
+.other_nav a{
+     color: #ffffff;
+     text-decoration: none;
+     margin: 10px;
+}
+.other_nav ul{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+     margin: 5px auto;
+     padding: 10px;
+     /* border: 2px solid #ffffff; */
+}
+
+
+
+
+
+.landing{
+     width: 70%;
+     margin: 0 auto;
+     padding: 20px;
+     /* border: 3px solid red; */
+}
+.items{
+     /* border: 4px solid ; */
+     text-align: center;
+     width: 80%;
+     margin: 30px auto;
+}
+.items img{
+     width: 250px;
+}
+.items p{
+     /* border: 1px solid ; */
+     margin: 5px 0;
+     padding: 10px;
+     display: block;
+     font-size: 1.3rem;
+     color: #000;
+}
+.fa-solid{
+     color: #000;
+     font-size: 1.2rem;
+}
+#services h1{
+     text-align: center;
+     color: #000;
+     font-size: 1.8rem;
+}
+.services_inner{
+     width: 80%;
+     margin: 30px auto;
+     /* border: 3px solid ; */
+     padding: 30px;
+     display: grid;
+     grid-template-columns: repeat(3,4fr);
+}
+.services_inner p{
+     border: 2px solid ;
+     margin: 15px 10px;
+     text-align: left;
+     padding: 20px;
+     color: #000;
+     border-radius: 10px;
+     font-size: 1rem;
+}
+@media screen and (max-width:400px) {
+     .services_inner{
+          width: 90%;
+          padding: 10px;
+     }
+     .services_inner p{
+          margin: 10px;
+          padding: 10px;
+          font-size: .9rem;
+     }
+}
+#contact h1{
+     text-align: center;
+     color: #000;
+}
+#contact{
+     /* border: 3px solid ; */
+     width: 80%;
+     margin: 30px auto;
+     padding: 30px;
+}
+form{
+     /* border: 3px solid ; */
+     text-align: center;
+}
+.form_element{
+     /* border: 2px solid ; */
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     margin: 0px auto;
+}
+.form_element input{
+     padding: 15px;
+     width: 100%;
+     margin: 0 auto;
+     border: 2px solid;
+     border-radius: 5px;
+}
+.form_element label{
+     text-align: left;
+}
+textarea{
+     padding: 50px 10px;
+     border: 2px solid;
+     border-radius: 5px;
+}
+.submit{
+     border: 2px solid ;
+     padding: 20px 20px;
+     outline: none;
+     border-radius: 5px;
+     background-color: #000047;
+     color: #ffffff;
+     transition: .4s;
+}
+.submit:hover{
+     background-color: #ffffff;
+     color: #000047;
+}
+.copyright{
+     text-align: center;
+     background-color: #000047;
+     color: #ffffff;
+     padding: 10px;
+}
+@media screen and (max-width:1060px) {
+     .services_inner{
+          grid-template-columns: repeat(2,4fr);
+     }
+}
+@media screen and (max-width:1000px) {
+     .form_element{
+          width: 80%;
+          margin: 0px auto;
+     }
+}
+@media screen and (max-width:790px) {
+     .form_element{
+          width: 90%;
+     }
+     .services_inner{
+          grid-template-columns: repeat(1,4fr);
+     }
+}
+@media screen and (max-width:625px) {
+     .navigation{
+          display: none;
+     }
+     .other_nav{
+          display: grid;
+     }
+     #contact h1{
+          font-size: 1.2rem;
+     }
+     #services h1{
+          font-size: 1.2rem;
+     }
+     .form_element input{
+          padding: 10px;
+     }
+     textarea{
+          padding: 20px 10px;
+          border: 2px solid;
+          border-radius: 5px;
+     }
+}
+@media screen and (max-width:540px) {
+     #contact{
+          width: 100%;
+          margin: 30px auto;
+          padding: 0px;
+     }
+     .landing{
+          width: 100%;
+     }
+     .items{
+          width: 100%;
+     }
+}
+
